@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lab03</title>
+	</head>
+	<body>
+		<script>
+		var testarray = new Array();
+		document.write("<br>Lab03: Array aangemaakt");
+		testarray[0] = "een";
+		testarray[1] = "twee";
+		testarray[2] = 3;
+		testarray[3] = "vier";
+		
+		testarray[4]=5;
+		document.write('<br>Vijfde element toegevoegd: ' + testarray);
+		
+		datatype= testarray[4];
+		document.write('<br>Datatype van de vijfde element: ' + typeof testarray[4]);
+		
+		delete testarray[4];
+		document.write('<br>Resultaat van delete: ' + testarray);
+		
+		testarray[0] = "nul";
+		testarray[1] = "een";
+		testarray[2] = "twee";
+		testarray[3] = 3;
+		testarray[4] = "vier";
+		document.write('<br>Nieuw element nul: ' + testarray);
+		
+		delete testarray[0];
+		document.write('<br>Datatype[0] is: ' + typeof testarray[0]);
+		
+		testarray.splice(0,1);
+		document.write('<br>Resultaat: ' + testarray);
+		
+		testarray.splice(1,1);
+		document.write('<br>Resultaat: ' + testarray);
+		
+		testarray.splice(2,1);
+		document.write('<br>Resultaat: ' + testarray);
+		</script>
+	</body>
+</html>
